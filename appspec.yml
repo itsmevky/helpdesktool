@@ -1,20 +1,10 @@
 version: 0.0
 os: linux
 files:
-   - source: /
-     destination: /var/www/html/helpdesktool
-permissions:
-   - object: /var/www/html/helpdesktool
-     pattern: "**"
-     owner: apache
-     group: apache
-     mode: 755
-     type:
-       - file
+  - source: /
+    destination: /var/www/html/helpdesktool
 hooks:
    BeforeInstall:
-    - location: scripts/beforeInstall.sh
-      runas: root
+     - location: scripts/beforeInstall.sh
    AfterInstall:
-    - location: scripts/afterInstall.sh
-      runas: root
+     - location: scripts/afterInstall.sh
