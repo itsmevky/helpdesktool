@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/devhelpdesktool
+    destination: /var/www/html/helpdesktool
 hooks:
    BeforeInstall:
      - location: scripts/beforeInstall.sh
    AfterInstall:
-     - location: scripts/afterInstall.sh
+- location: scripts/afterInstall.sh
