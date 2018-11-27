@@ -7,4 +7,4 @@ hooks:
    BeforeInstall:
      - location: scripts/beforeInstall.sh
    AfterInstall:
-- location: scripts/afterInstall.sh
+     - location: scripts/afterInstall.sh
